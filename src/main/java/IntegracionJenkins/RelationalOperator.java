@@ -24,13 +24,12 @@ public class RelationalOperator {
 
     
     public void goodWidth(final int object_width, final int min_width, final int max_width){
-        if (isGreater(object_width, min_width) && isLess(object_width, max_width)) {
+        if (isGreater(object_width, min_width) || isLess(object_width, max_width)) {
             System.out.println("The width is correct");
         } else {
             System.out.println("The width is INCORRECT");
         }
     }
-
     
     public void goodHeight(final int object_height, final int min_height, final int max_height){
         if (isGreater(object_height, min_height) && isLess(object_height, max_height)) {
